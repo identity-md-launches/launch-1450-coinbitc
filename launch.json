@@ -1,0 +1,24 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "Coinbitc",
+    "name": "Coinbitc",
+    "symbol": "COINBITC",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "1000000000000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0x0000000000000000000000000000000000000000",
+    "fee": 12500,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336"
+  },
+  "economics": {
+    "poolBps": 8800,
+    "initialMarketCapWei": "10000000000000000000",
+    "remainderTo": "0x12a7aad083cef06fef7c295514b52fc8bc81960d"
+  },
+  "notes": "Coinbitc (src/Coinbitc.sol:Coinbitc) is a plain OpenZeppelin v5 ERC-20 named Coinbitc with symbol COINBITC and 18 decimals. Its constructor takes no arguments and mints the whole supply of 1,000,000,000 COINBITC (1000000000000000000000000000 minor units) once to msg.sender, the factory. There is no owner, mint, burn, pause, blacklist, fee, tax or upgrade path; every transfer moves exactly the requested amount, so the factory, the pool manager and the launch's distributor need no exemptions. No application contracts are deployed and no initialization calls are needed. The factory takes the swarm's share, seeds the pool with 88% of the supply single-sided against native ETH at the price it derives from the 10 ETH opening cap, and forwards the remainder to 0x12a7aad083cef06fef7c295514b52fc8bc81960d."
+}
